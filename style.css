@@ -13,6 +13,10 @@
   --white: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* BASE */
 body {
   font-family: 'Inter', sans-serif;
@@ -428,6 +432,7 @@ footer {
   color: var(--blue);
   position: relative;
   margin-bottom: 30px;
+   text-align: left;    
 }
 
 .section-title::after {
@@ -475,4 +480,114 @@ footer {
 
 .justify {
     text-align: justify;
+}
+
+
+/* ===== REDES SOCIAIS ===== */
+
+.redes{
+    margin-top:60px;
+    text-align:center;
+}
+
+.redes h3{
+    margin-bottom:25px;
+    font-size:22px;
+    color:#0f3b2e;
+}
+
+.redes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:20px;
+}
+
+.rede-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border-radius:10px;
+    background:#fff;
+    text-decoration:none;
+    color:#333;
+    transition:.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.rede-item span{
+    font-size:26px;
+}
+
+.rede-item strong{
+    display:block;
+    font-size:16px;
+}
+
+.rede-item p{
+    font-size:13px;
+    color:#666;
+}
+
+/* hover */
+.rede-item:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* cores por rede */
+
+.rede-item.whatsapp:hover{
+    background:#25d366;
+    color:#fff;
+}
+
+.rede-item.instagram:hover{
+    background:linear-gradient(45deg,#fd1d1d,#e1306c,#f77737);
+    color:#fff;
+}
+
+.rede-item.linkedin:hover{
+    background:#0a66c2;
+    color:#fff;
+}
+
+.rede-item.email:hover{
+    background:#0f3b2e;
+    color:#fff;
+}
+
+/* modo dark */
+
+.section.dark .redes h3{
+    color:#fff;
+}
+
+.section.dark .rede-item{
+    background:#1c4b3b;
+    color:#fff;
+}
+
+.section.dark .rede-item p{
+    color:#ccc;
+}
+
+
+.color-white {
+    color: white!important;
+
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.mb {
+    margin-bottom: 40px;
+}
+
+
+footer {
+    padding: 50px 0;
 }
