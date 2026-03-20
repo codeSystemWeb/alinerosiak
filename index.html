@@ -1,149 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comunicação & Cerimonial</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Aline Rosiak</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo"><img src="assets/logo.png" alt="" width="150px"></div>
 
-<!-- HEADER -->
-<header>
-  <div class="container nav">
-    <div class="logo"><img src="1762127120704.jpg" alt="" width="200px"></div>
+        <nav class="menu">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#eventos">Eventos</a>
+        </nav>
 
-    <nav id="menu">
-      <a href="#home">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
-
-    <div class="hamburger" id="hamburger">
-      ☰
-    </div>
-  </div>
-</header>
-
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="container hero-content">
-    <div class="text">
-      <h1>Comunicação que transforma carreiras</h1>
-      <p>Mais de 25 anos formando líderes, apresentadores e profissionais com comunicação clara, segura e impactante.</p>
-      <a href="#contato" class="btn">Fale comigo</a>
-    </div>
-
-    <div class="image">
-      <img src="1762127224430.jpg" alt="Apresentador">
-    </div>
-  </div>
-
-  <svg class="wave" viewBox="0 0 1440 320">
-    <path fill="#fff" d="M0,160L80,144C160,128,320,96,480,96C640,96,800,128,960,138.7C1120,149,1280,139,1360,133.3L1440,128V320H0Z"></path>
-  </svg>
-</section>
-
-<!-- SOBRE -->
-<section id="sobre" class="sobre container">
-  <h2>Sobre</h2>
-  <p>
-    Sou jornalista, radialista e mestre de cerimônias com mais de 25 anos de experiência em comunicação, apresentação e desenvolvimento de pessoas.
-  </p>
-  <p>
-    Já atuei em eventos nacionais, conduzi programas de rádio e formei centenas de profissionais em dicção, oratória e protocolo.
-  </p>
-  <p>
-    Acredito que uma comunicação clara e estratégica transforma carreiras e resultados.
-  </p>
-</section>
-
-<!-- SERVIÇOS -->
-<section id="servicos" class="servicos">
-  <div class="container">
-    <h2>Serviços</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Cursos</h3>
-        <p>Treinamentos em dicção, oratória e comunicação estratégica.</p>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
       </div>
 
-      <div class="card">
-        <h3>Palestras</h3>
-        <p>Conteúdos inspiradores e práticos para empresas e eventos.</p>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#eventos">Eventos</a>
       </div>
+    </header>
 
-      <div class="card">
-        <h3>Consultorias</h3>
-        <p>Desenvolvimento de líderes e equipes com comunicação eficaz.</p>
-      </div>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+  <div class="overlay">
+    <div class="hero-content">
+      <h1>Aline Rosiak</h1>
+      <p class="subtitle">Mestre de Cerimônias | Especialista em Comunicação</p>
+      <p class="description">
+        Mais do que apresentar, conecto pessoas e momentos.
+      </p>
 
-      <div class="card">
-        <h3>Cerimonial</h3>
-        <p>Apresentação profissional para eventos corporativos e institucionais.</p>
-      </div>
+      <a href="https://wa.me/5551999188881" target="_blank" class="btn primary">
+        Falar no WhatsApp
+      </a>
     </div>
   </div>
 </section>
 
-<!-- AUTORIDADE -->
-<section class="autoridade">
-  <div class="container">
-    <h2>Experiência que gera resultados</h2>
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre fade">
+      <div class="container">
+        <div class="texto">
+          <h2>Sobre</h2>
+          <p>Sou Aline Rosiak...</p>
+          <p>Com mais de 26 anos...</p>
+          <p>Acredito que cada evento...</p>
+        </div>
 
-    <div class="numeros">
-      <div>
-        <h3>25+</h3>
-        <p>Anos de experiência</p>
+        <div class="imagem">
+          <img src="assets/aline-sobre.jpeg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="servicos fade">
+      <h2>Serviços</h2>
+
+      <div class="servico">
+        <h3>🎤 Mestre de Cerimônias</h3>
+        <p>Texto completo aqui...</p>
       </div>
 
-      <div>
-        <h3>100+</h3>
-        <p>Eventos realizados</p>
+      <div class="servico">
+        <h3>🎓 Academia de Mestres</h3>
+        <p>Texto completo aqui...</p>
       </div>
 
-      <div>
-        <h3>500+</h3>
-        <p>Profissionais treinados</p>
+      <div class="servico">
+        <h3>🎙️ Palestras</h3>
+        <p>Texto completo aqui...</p>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- CONTATO -->
-<section id="contato" class="contato container">
-  <h2>Vamos conversar?</h2>
-  <p>Entre em contato para parcerias, eventos e oportunidades.</p>
+    <!-- BENEFÍCIOS -->
+    <section class="beneficios fade">
+      <h2>Benefícios</h2>
 
-  <form>
-    <input type="text" placeholder="Seu nome" required>
-    <input type="email" placeholder="Seu e-mail" required>
-    <textarea placeholder="Sua mensagem" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
+      <div class="grid">
+        <div class="beneficio">🔒 Segurança e tranquilidade</div>
+        <div class="beneficio">🎯 Condução profissional</div>
+        <div class="beneficio">💬 Comunicação envolvente</div>
+        <div class="beneficio">📋 Organização do evento</div>
+        <div class="beneficio">💎 Valorização da imagem</div>
+        <div class="beneficio">🤝 Conexão com o público</div>
+      </div>
+    </section>
 
-<!-- REDES SOCIAIS -->
-<section class="social">
-  <h2>Conecte-se comigo</h2>
-  <div class="icons">
-    <a href="#">Instagram</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">YouTube</a>
-  </div>
-</section>
+    <!-- EVENTOS -->
+    <section id="eventos" class="eventos fade">
+      <h2>Eventos</h2>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 - Todos os direitos reservados</p>
-</footer>
+      <div class="carousel" id="carousel">
+        <img src="https://via.placeholder.com/300x200" />
+        <img src="https://via.placeholder.com/300x200" />
+        <img src="https://via.placeholder.com/300x200" />
+      </div>
+    </section>
 
-<script src="script.js"></script>
-</body>
+    <!-- CTA -->
+    <section class="cta fade">
+      <h2>Vamos conversar sobre o seu evento?</h2>
+      <a href="https://wa.me/5551999188881" target="_blank" class="btn primary"
+        >Falar no WhatsApp</a
+      >
+    </section>
+
+    <footer>
+      <p>@aline.rosiak</p>
+      <p>WhatsApp: 51 9.9918-8881</p>
+      <p>Email: alinerosiak@gmail.com</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
