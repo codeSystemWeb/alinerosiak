@@ -86,7 +86,7 @@ header {
 
 .hero {
   height: 100vh;
-  background: url(./assets/bg-hero.jpeg) center/cover no-repeat fixed;
+  background: url(./assets/bg-hero.jpeg) right/cover no-repeat fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -592,3 +592,77 @@ footer {
 footer {
     padding: 50px 0;
 }
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+
+/* ATIVO */
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal.active img {
+  transform: scale(1);
+}
+
+/* CURSOR */
+.carousel-img {
+  cursor: pointer;
+}
+
+/* BOTÕES MODAL */
+.modal-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.modal-btn:hover {
+  background: rgba(0,0,0,0.9);
+}
+
+.modal-btn.prev {
+  left: 20px;
+}
+
+.modal-btn.next {
+  right: 20px;
+}
+
+/* @media(max-width:768px) {
+  .modal-btn {
+    display: none;
+  }
+}
+
+ */
